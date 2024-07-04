@@ -1,0 +1,499 @@
+@media screen and (max-width :1199px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    h6 {
+        line-height: 18px;
+    }
+
+    /*======================
+        header start
+     ========================*/
+
+    header .navbar_menu .menu {
+        position: fixed;
+        width: 320px;
+        top: 0;
+        right: -340px;
+        display: block !important;
+        height: 100%;
+        padding: 25px;
+        background-color: #0B335D;
+        z-index: 22;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+    }
+
+    header .navbar_menu .menu.show {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header .navbar_menu .menu-brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    header .navbar_menu .menu-brand .img-fluid {
+        width: 60%;
+    }
+
+    header .navbar_menu .menu-brand i {
+        font-size: 25px;
+        color: #fff;
+    }
+
+    header .navbar_menu .menu li {
+        line-height: 40px;
+    }
+
+    header .navbar_menu .menu a:hover:after {
+        transform: scaleX(0);
+    }
+
+    /* ===============
+        home_content 
+       ============= */
+
+    .home_content .medium-circul {
+        bottom: 0px;
+    }
+
+    .home_content .small-circul {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        opacity: 0.6;
+        position: absolute;
+        top: -30px;
+        left: 220px;
+        background-color: rgba(25, 154, 220, 0.2);
+    }
+
+    /*=================================
+        business 
+  =================================*/
+    .business .business_title {
+        width: 100%;
+        color: #111;
+        text-align: center;
+    }
+
+    /*============================================================ contact page ===================================================*/
+
+    .we-help .img_erro-1 {
+        left: -230px;
+    }
+
+    .project_info .box:nth-child(-n + 2){
+        margin-bottom: 30px;
+
+      }
+    .we-help .img_erro-1 img,
+    .we-help .img_erro-2 img {
+        width: 250px;
+    }
+
+    .we-help .img_erro-2 {
+        position: absolute;
+        right: -230px;
+    }
+
+    /*============== footer====================*/
+
+
+    .footer_top_section .row .cols:nth-child(-n + 3) {
+        border-bottom: 1px solid #fff;
+    }
+
+
+    .footer h3 {
+        margin-bottom: 20px;
+    }
+
+    .footer .footer_menu_list,
+    .footer .news_content {
+        padding-bottom: 5px;
+    }
+
+    .footer .footer_menu_list::before {
+        right: 20px;
+        min-height: 180px;
+        max-height: 180px;
+    }
+
+
+}
+
+@media screen and (max-width :991px) {
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    .main-btn {
+        font-size: 16px;
+        padding: 11px 35px;
+    }
+
+    .white_btn {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+    /*=================================
+        header 
+    =================================*/
+    header .logo .img-fluid {
+        width: 80%;
+    }
+
+    header nav .navbar_menu .mobmenu_action i {
+        font-size: 30px;
+    }
+
+    /*=================================
+        home_content 
+    =================================*/
+    .home_content {
+        height: auto;
+        padding: 100px 0px;
+    }
+
+    .home_content .img-fluid {
+        width: 60%;
+    }
+
+    .home_content h1 {
+        letter-spacing: 2px
+    }
+
+    /* business */
+    .business .card_up {
+        margin-top: 0px;
+    }
+
+    /* trusted_companies */
+    .trusted_companies .card {
+        min-height: 94px;
+        max-height: 94px;
+
+    }
+
+    /*======================================================== about page ============================================================= */
+    .cooman_height {
+        height: 400px;
+    }
+
+    .cooman_height .cooman_object {
+        width: 90%;
+    }
+
+    /*===================
+      meet-our-team 
+     ==================*/
+    .meet-our-team .boss-img {
+        width: 90%;
+    }
+
+    /*======================================================== services page===========================================================*/
+    .product_about .ring {
+        width: 400px;
+        height: 400px;
+    }
+
+    .product_about .inner-ring {
+        width: 360px;
+        height: 360px;
+    }
+
+    /* contact page */
+    .we-help .we-help_img {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width :767px) {
+    .footer_top_section .row .cols:nth-child(-n + 4) {
+        border-bottom: 1px solid #fff;
+    }
+
+    .main-btn,
+    .white_btn {
+        font-size: 14px;
+        padding: 9px 25px;
+    }
+
+    .padding-y-70 {
+        padding: 50px 0px;
+    }
+    .footer{
+        padding-top: 50px;
+    }
+    .home_content {
+        padding: 60px 0px;
+    }
+
+    /* header */
+    .navbar_menu .main-btn {
+        position: fixed;
+        top: 350px;
+        right: -300px;
+        display: block;
+        background-color: #0B335D;
+        z-index: 22;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+    }
+
+    header nav .navbar_menu .main-btn.show {
+        right: 122px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /*=================
+        buildYour
+    ===================*/
+
+    .buildYour .building_erro {
+        width: 80px;
+    }
+
+    .buildYour .img-fluid {
+        width: 80%;
+    }
+
+
+    /* footer_top */
+    .footer_top_section .box .box_title {
+        font-size: 23px;
+        line-height: 50px;
+    }
+
+    .footer .footer_menu_list,
+    .footer .news_content {
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+
+    .footer .news_content {
+        padding-bottom: 0 !important;
+    }
+
+    .footer .footer_menu_list::before {
+        border-right: unset;
+    }
+
+    .footer h3 {
+        margin-bottom: 15px;
+    }
+
+    /*======================================================== about page ============================================================= */
+    .cooman_height {
+        height: 200px;
+    }
+
+    .our-core-values .dotted-ring {
+        width: 130px;
+        height: 130px;
+    }
+
+    /*===================
+      meet-our-team 
+     ==================*/
+    .meet-our-team .boss-img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width :575px) {
+    h1 {
+        font-size: 31px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px !important;
+        line-height: 1.2 !important;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .home_top_padding {
+        padding-top: 50px;
+    }
+
+    header .logo .img-fluid {
+        width: 75%;
+    }
+
+    header .navbar_menu .mobmenu_action i {
+        font-size: 25px;
+    }
+
+    /* what_best */
+    .what_best .card {
+        margin: 75px 0px 0px 0px;
+    }
+
+    .what_best .card .img-fluid {
+        max-width: 100px;
+        margin: -50px auto 0px;
+    }
+
+    .our-product .slide-container {
+        padding: 25px 0px 40px 0px;
+    }
+
+    /* buildYour */
+    .buildYour .buildyour_bg,
+    .why-joint-our-team {
+        padding: 30px;
+    }
+
+    /*======================================================== about page============================================================= */
+
+    .our-core-values .dotted-ring {
+        width: 100px;
+        height: 100px;
+    }
+    .our-mission .card .card-body .ring {
+        width: 80px;
+        height: 80px;
+        margin-top: -60px;
+    }
+
+    /* .work-life-best .card h6,
+    .our-core-values h6{
+        font-size: 16px !important;
+        line-height: 1.2 !important;
+    } */
+
+    /*======================================================== services page============================================================= */
+    .product_about .ring {
+        width: 300px;
+        height: 300px;
+    }
+
+    .product_about .inner-ring {
+        width: 260px;
+        height: 260px;
+    }
+
+    .footer_top_section .box .box_sub_title,
+    .footer_top_section .box .box_contact {
+        font-size: 14px;
+
+    }
+}
+
+@media screen and (max-width :360px) {
+    h6 {
+        font-size: 14px !important;
+        line-height: 1 !important;
+    }
+
+    /*======================================================== about page============================================================= */
+
+    .our-mission .card .card-body .ring {
+        width: 60px;
+        height: 60px;
+        margin-top: -60px;
+    }
+
+    .our-mission .card .card-body .ring img {
+        width: 40px;
+    }
+
+    .our-core-values .dotted-ring  {
+        width: 70px;
+        height: 70px;
+    }
+
+    .our-core-values .dotted-ring  img {
+        width: 50px;
+    }
+
+    .work-life-best .card .work-circle {
+        height: 70px;
+        width: 70px;
+    }
+
+
+    .work-life-best .card {
+        padding: 20px;
+    }
+
+    .work-life-best .card .work-circle img {
+        width: 40px;
+    }
+
+    /*======================================================== services page============================================================= */
+    .product_about .ring {
+        width: 260px;
+        height: 260px;
+    }
+
+    .product_about .inner-ring {
+        width: 220px;
+        height: 220px;
+
+    }
+}
