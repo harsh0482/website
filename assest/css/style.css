@@ -856,12 +856,13 @@ header .navbar_menu .mobmenu_action i {
   z-index: 2;
 }
 
-.footer ul {
+.footer ul.footer_menu_list{
   padding-left: 0;
   list-style: none;
-}
+  position: relative;
+} 
 
-.footer .footer_menu_list::before {
+.footer .footer_menu_list:nth-child(-n)::before{
   content: '';
   position: absolute;
   top: 5px;

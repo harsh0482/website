@@ -315,10 +315,10 @@
         padding-bottom: 0 !important;
     }
 
-    .footer .footer_menu_list::before {
+    .footer .footer_menu_list:nth-child(n+1) {
         border-right: unset;
     }
-
+    /* .footer_top_section .row .cols:nth-child(-n + 4) */
     .footer h3 {
         margin-bottom: 15px;
     }
