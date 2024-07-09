@@ -522,7 +522,6 @@ header .navbar_menu .mobmenu_action i {
   display: flex;
   display: -webkit-flex;
   align-items: flex-end;
-  background: #343434 no-repeat center center / cover;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
@@ -862,7 +861,7 @@ header .navbar_menu .mobmenu_action i {
   position: relative;
 } 
 
-.footer .footer_menu_list:nth-child(-n)::before{
+.footer .bottom_dashed [class^=col-]:not(:last-child) .footer_menu_list::before{
   content: '';
   position: absolute;
   top: 5px;
@@ -1294,7 +1293,9 @@ input::placeholder {
 .we-help p {
   color: var(--text-color);
 }
-
+.justify_p{
+  text-align: justify;
+}
 .we-help .img_erro-1 {
   position: absolute;
   left: -260px;

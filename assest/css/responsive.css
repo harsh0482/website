@@ -106,10 +106,11 @@
         left: -230px;
     }
 
-    .project_info .box:nth-child(-n + 2){
+    .project_info .box:nth-child(-n + 2) {
         margin-bottom: 30px;
 
-      }
+    }
+
     .we-help .img_erro-1 img,
     .we-help .img_erro-2 img {
         width: 250px;
@@ -143,6 +144,9 @@
         max-height: 180px;
     }
 
+    .geat_form .form .file-uploaded i {
+        left: 17%;
+    }
 
 }
 
@@ -174,6 +178,13 @@
         padding: 10px 25px;
     }
 
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .circle {
+        display: none;
+    }
     /*=================================
         header 
     =================================*/
@@ -231,18 +242,26 @@
 
     /*======================================================== services page===========================================================*/
     .product_about .ring {
-        width: 400px;
-        height: 400px;
+        width: 340px;
+        height: 340px;
     }
 
     .product_about .inner-ring {
-        width: 360px;
-        height: 360px;
+        width: 300px;
+        height: 300px;
     }
 
     /* contact page */
-    .we-help .we-help_img {
-        max-width: 60%;
+    .geat_form .form .file-uploaded i {
+        left: 7%;
+    }
+
+    .marging_top {
+        margin-top: 15px !important;
+    }
+    .we-help .justify_p{
+        font-size: 13px !important;
+        line-height: 20px !important;
     }
 }
 
@@ -260,9 +279,11 @@
     .padding-y-70 {
         padding: 50px 0px;
     }
-    .footer{
+
+    .footer {
         padding-top: 50px;
     }
+
     .home_content {
         padding: 60px 0px;
     }
@@ -318,6 +339,7 @@
     .footer .footer_menu_list:nth-child(n+1) {
         border-right: unset;
     }
+
     /* .footer_top_section .row .cols:nth-child(-n + 4) */
     .footer h3 {
         margin-bottom: 15px;
@@ -338,6 +360,13 @@
      ==================*/
     .meet-our-team .boss-img {
         width: 50%;
+    }
+
+    .we-help .we-help_img {
+        max-width: 240px;
+    }
+    .geat_form .form .file-uploaded i {
+        left: 17%;
     }
 }
 
@@ -368,7 +397,7 @@
     }
 
     p {
-        font-size: 14px;
+        font-size: 13px;
         line-height: normal;
     }
 
@@ -414,6 +443,7 @@
         width: 100px;
         height: 100px;
     }
+
     .our-mission .card .card-body .ring {
         width: 80px;
         height: 80px;
@@ -444,6 +474,12 @@
     }
 }
 
+@media screen and (max-width :480px) {
+    .geat_form .form .file-uploaded i {
+        left: 10%;
+    }
+}
+
 @media screen and (max-width :360px) {
     h6 {
         font-size: 14px !important;
@@ -462,12 +498,12 @@
         width: 40px;
     }
 
-    .our-core-values .dotted-ring  {
+    .our-core-values .dotted-ring {
         width: 70px;
         height: 70px;
     }
 
-    .our-core-values .dotted-ring  img {
+    .our-core-values .dotted-ring img {
         width: 50px;
     }
 
@@ -495,5 +531,8 @@
         width: 220px;
         height: 220px;
 
+    }
+    .geat_form .form .file-uploaded i {
+        left: 10%;
     }
 }
