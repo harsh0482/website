@@ -108,7 +108,6 @@
 
     .project_info .box:nth-child(-n + 2) {
         margin-bottom: 30px;
-
     }
 
     .we-help .img_erro-1 img,
@@ -471,6 +470,9 @@
     .footer_top_section .box .box_contact {
         font-size: 14px;
 
+    }
+    .project_info .row .box:nth-child(-n + 3) {
+        margin-bottom: 30px !important;
     }
 }
 
