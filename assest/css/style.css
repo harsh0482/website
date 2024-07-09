@@ -1140,7 +1140,9 @@ input::placeholder {
   padding-top: 10px;
   padding-bottom: 20px;
 }
-
+.product_padding{
+  padding:40px 0px 40px 0px;
+}
 .product_about .ring {
   width: 440px;
   height: 440px;
