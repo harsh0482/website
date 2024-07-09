@@ -365,6 +365,10 @@
     .geat_form .form .file-uploaded i {
         left: 17%;
     }
+    .paddiing_top_botoom {
+        padding-top: 7px;
+        padding-bottom: 14px;
+      }
 }
 
 @media screen and (max-width :575px) {
