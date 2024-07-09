@@ -480,8 +480,6 @@ header .navbar_menu .mobmenu_action i {
   height: 40px !important;
   border-radius: 50% !important;
   background-color: rgba(5, 92, 136, 1);
-  /* visibility: hidden;
-  opacity: 0; */
   transition: all 0.5s ease;
 }
 
@@ -1266,9 +1264,6 @@ input::placeholder {
 }
 
 .geat_form .form .file-uploaded i {
-  position: absolute;
-  top: 15px;
-  left: 22%;
   font-size: 25px;
   color: var(--blue-color);
 }

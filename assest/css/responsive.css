@@ -143,8 +143,13 @@
         max-height: 180px;
     }
 
-    .geat_form .form .file-uploaded i {
-        left: 17%;
+    .footer .bottom_dashed [class^=col-] .footer_menu_list::before {
+        min-height: 180px !important;
+        max-height: 180px !important;
+    }
+
+    .footer .bottom_dashed [class^=col-]:nth-child(even) .footer_menu_list::before {
+        border-right: unset !important;
     }
 
 }
@@ -181,9 +186,11 @@
         font-size: 14px;
         line-height: 22px;
     }
+
     .circle {
         display: none;
     }
+
     /*=================================
         header 
     =================================*/
@@ -251,17 +258,16 @@
     }
 
     /* contact page */
-    .geat_form .form .file-uploaded i {
-        left: 7%;
-    }
 
     .marging_top {
         margin-top: 15px !important;
     }
-    .we-help .justify_p{
+
+    .we-help .justify_p {
         font-size: 13px !important;
         line-height: 20px !important;
     }
+
 }
 
 @media screen and (max-width :767px) {
@@ -338,6 +344,7 @@
     .footer .footer_menu_list:nth-child(n+1) {
         border-right: unset;
     }
+
     .footer h3 {
         margin-bottom: 15px;
     }
@@ -362,13 +369,16 @@
     .we-help .we-help_img {
         max-width: 240px;
     }
-    .geat_form .form .file-uploaded i {
-        left: 17%;
-    }
+
     .paddiing_top_botoom {
         padding-top: 7px;
         padding-bottom: 14px;
-      }
+    }
+
+    .swiper-button-prev,.swiper-button-next {
+        transform: translateX(0px);
+        visibility: visible !important;
+    }
 }
 
 @media screen and (max-width :575px) {
@@ -416,6 +426,10 @@
 
     header .navbar_menu .mobmenu_action i {
         font-size: 25px;
+    }
+
+    .max_width_img {
+        max-width: 52px !important;
     }
 
     /* what_best */
@@ -467,16 +481,41 @@
         font-size: 14px;
 
     }
+
     .project_info .row .box:nth-child(-n + 3) {
         margin-bottom: 30px !important;
     }
-}
 
-@media screen and (max-width :480px) {
-    .geat_form .form .file-uploaded i {
-        left: 10%;
+    .footer .bottom_dashed [class^=col-] .footer_menu_list::before {
+        border-bottom: 2px dashed rgba(255, 255, 255, 0.1) !important;
+        min-height: 1px !important;
+        max-height: 1px !important;
+        bottom: 0px !important;
+        right: 0px !important;
+        width: 100% !important;
+    }
+
+    .footer .bottom_dashed [class^=col-]:not(:last-child) .footer_menu_list::before {
+        border-right: unset;
+        top: unset !important;
+    }
+
+    .footer .bottom_dashed [class^=col-]:not(:first-child) {
+        padding-top: 10px !important;
+    }
+
+    .geat_form .form .form-control {
+        padding: 15px 15px;
+        font-size: 16px;
+    }
+
+    .footer_top_section .box .box_content img {
+        min-height: 80px;
+        max-height: 80px;
     }
 }
+
+
 
 @media screen and (max-width :360px) {
     h6 {
@@ -484,7 +523,7 @@
         line-height: 1 !important;
     }
 
-    /*======================================================== about page============================================================= */
+    /*=========================== about page ================================= */
 
     .our-mission .card .card-body .ring {
         width: 60px;
@@ -519,7 +558,7 @@
         width: 40px;
     }
 
-    /*======================================================== services page============================================================= */
+    /*============================== services page ===================================== */
     .product_about .ring {
         width: 260px;
         height: 260px;
@@ -529,8 +568,5 @@
         width: 220px;
         height: 220px;
 
-    }
-    .geat_form .form .file-uploaded i {
-        left: 10%;
     }
 }
