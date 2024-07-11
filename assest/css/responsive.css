@@ -219,6 +219,10 @@
     }
 
     /* business */
+    .business .title_padding_botoom {
+        padding-bottom: 10px !important;
+    }
+
     .business .card_up {
         margin-top: 0px;
     }
@@ -375,10 +379,12 @@
         padding-bottom: 14px;
     }
 
-    .swiper-button-prev,.swiper-button-next {
+    .swiper-button-prev,
+    .swiper-button-next {
         transform: translateX(0px);
         visibility: visible !important;
     }
+
     .product_padding {
         padding: 30px 0px 30px 0px;
     }
@@ -446,7 +452,7 @@
     }
 
     .our-product .slide-container {
-        padding: 25px 0px 40px 0px;
+        padding: 0px 0px 40px 0px;
     }
 
     /* buildYour */
@@ -517,6 +523,7 @@
         max-height: 80px;
     }
 }
+
 @media screen and (max-width :480px) {
     .product_padding {
         padding: 25px 0px 25px 0px;

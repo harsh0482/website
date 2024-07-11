@@ -85,7 +85,9 @@ p {
   font-family: var(--poppins-text);
   margin-bottom: 0;
 }
-
+.title_padding_botoom{
+  padding-bottom: 30px;
+}
 /*=============
     button 
   =============*/
@@ -442,7 +444,7 @@ header .navbar_menu .mobmenu_action i {
 }
 
 .our-product .slide-container {
-  padding: 40px 0;
+  padding-bottom: 40px;
 }
 
 .our-product .slide-content {
@@ -656,7 +658,7 @@ header .navbar_menu .mobmenu_action i {
 }
 
 .client-testimonial .slide-container {
-  padding: 40px 0;
+  padding-bottom: 40px ;
 }
 
 .client-testimonial .slide-content {
