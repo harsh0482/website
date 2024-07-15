@@ -88,6 +88,9 @@ p {
 .title_padding_botoom{
   padding-bottom: 30px;
 }
+.lb-details{
+  display: none !important;
+}
 /*=============
     button 
   =============*/
