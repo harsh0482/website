@@ -415,7 +415,7 @@ header .navbar_menu .mobmenu_action i {
   font-family: var(--poppins-text);
   font-size: 14px;
   color: var(--blue-color);
-  font-weight: 400;
+  font-weight: 600;
   position: relative;
 }
 
@@ -936,8 +936,12 @@ input::placeholder {
   color: #fff;
   font-size: 25px;
   margin-right: 20px;
+  transition: all 0.4s ease;
+  cursor: pointer;
 }
-
+.footer .news_content .news_icon i:hover{
+  color: #199ADC;
+}
 /*** Back To Top ***/
 .scroll-top {
   position: fixed;
