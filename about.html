@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="./assest/css/vendor/wow-animate.css">
     <!-- fancybox -->
     <link rel="stylesheet" href="./assest/css/vendor/fancybox.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"> -->
     <!-- bootstrap style -->
     <link rel="stylesheet" href="./assest/css/vendor/bootstrap.min.css">
     <!-- coustm style -->
     <link rel="stylesheet" href="./assest/css/style.css">
     <!-- responsive style -->
     <link rel="stylesheet" href="./assest/css/responsive.css">
+
 </head>
 
 <body>
@@ -380,7 +382,8 @@
             <div class="row gy-4">
                 <div class="col-md-6 col-sm-12  order-md-0 order-sm-0 order-0 ">
                     <a href="./assest/image/about-img/our-gallery-1.png" data-fancybox="gallery">
-                        <img src="./assest/image/about-img/our-gallery-1.png" alt="img" class="img-fluid rounded-3 w-100">
+                        <img src="./assest/image/about-img/our-gallery-1.png" alt="img"
+                            class="img-fluid rounded-3 w-100">
                     </a>
                 </div>
                 <div class="col-md-6 col-sm-12 order-md-1 order-sm-1  order-1">
@@ -388,13 +391,13 @@
                         <div class="col-6">
                             <a href="./assest/image/about-img/our-gallery-2.png" data-fancybox="gallery">
                                 <img src="./assest/image/about-img/our-gallery-2.png" alt="img"
-                                class="img-fluid rounded-3 w-100">
+                                    class="img-fluid rounded-3 w-100">
                             </a>
                         </div>
                         <div class="col-6">
                             <a href="./assest/image/about-img/our-gallery-3.png" data-fancybox="gallery">
                                 <img src="./assest/image/about-img/our-gallery-3.png" alt="img"
-                                class="img-fluid rounded-3 w-100">
+                                    class="img-fluid rounded-3 w-100">
                             </a>
                         </div>
                     </div>
@@ -404,20 +407,21 @@
                         <div class="col-6">
                             <a href="./assest/image/about-img/our-gallery-4.png" data-fancybox="gallery">
                                 <img src="./assest/image/about-img/our-gallery-4.png" alt="img"
-                                class="img-fluid rounded-3 w-100">
+                                    class="img-fluid rounded-3 w-100">
                             </a>
                         </div>
                         <div class="col-6">
                             <a href="./assest/image/about-img/our-gallery-5.png" data-fancybox="gallery">
                                 <img src="./assest/image/about-img/our-gallery-5.png" alt="img"
-                                class="img-fluid rounded-3 w-100">
+                                    class="img-fluid rounded-3 w-100">
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 order-md-3 order-sm-2  order-2">
                     <a href="./assest/image/about-img/our-gallery-6.png" data-fancybox="gallery">
-                        <img src="./assest/image/about-img/our-gallery-6.png" alt="img" class="img-fluid rounded-3 w-100">
+                        <img src="./assest/image/about-img/our-gallery-6.png" alt="img"
+                            class="img-fluid rounded-3 w-100">
                     </a>
                 </div>
             </div>
@@ -666,7 +670,13 @@
     <!-- jquery js -->
     <script src="./assest/js/vendor/jquery-3.7.1.js"></script>
     <!-- fancybox -->
-     <script src="./assest/js/vendor/fancybox.umd.js"></script>
+    <script src="./assest/js/vendor/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->
     <!-- wow animate -->
     <script src="./assest/js/vendor/wow.min.js"></script>
     <script>
