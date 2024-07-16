@@ -103,32 +103,24 @@ p {
   border: 1px solid #fff;
   display: inline;
   border-radius: 100px;
+  transition: all 0.4s ease;
 }
 
 .main-btn {
   padding: 14px 50px;
-
 }
-
+.main-btn:hover {
+  color: #01013F;
+  background-color: #fff;
+}
 .white_btn {
   padding: 12px 30px;
   background-color: #199ADC;
 }
-
-.main-btn span,
-.white_btn span {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.main-btn span {
-  background-color: var(--blue-color);
-}
-
-.white_btn span {
-  background-color: #fff;
+.white_btn:hover{
+  background-color: transparent;
+  border: 1px solid #199ADC;
+  color: #199ADC;
 }
 
 .padding-y-70 {
