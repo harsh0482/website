@@ -234,6 +234,15 @@
 
     }
 
+    /* software */
+    .game-section .item {
+        width: 85px;
+    }
+
+    .game-section .item.active {
+        width: 360px;
+    }
+
     /*========================== about page =================================== */
     .cooman_height {
         height: 400px;
@@ -328,7 +337,38 @@
         width: 80%;
     }
 
+    /* software */
+    .game-section .item h3 {
+        font-size: 18px;
+    }
 
+    .game-section .item-desc p {
+        font-size: 15px;
+    }
+
+    .game-section .item {
+        margin: 0 10px 30px;
+        width: 85px;
+        height: 330px !important;
+        height: 100%;
+    }
+
+    .game-section .item .item_heding {
+        bottom: 42px;
+        font-size: 15px;
+    }
+
+    .game-section .item.active {
+        width: 280px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .game-section .owl-theme.custom-carousel .owl-dots {
+        margin-top: 5px;
+    }
+    .owl-carousel.owl-drag .owl-item {
+        max-height: 335px;
+    }
     /* footer_top */
     .footer_top_section .box .box_title {
         font-size: 23px;
@@ -439,6 +479,26 @@
 
     .max_width_img {
         max-width: 52px !important;
+    }
+
+    /* software */
+    .game-section .item {
+        margin: 0px 5px !important;
+        height: 100%;
+    }
+    .game-section .item .item_logo {
+        width: 30px;
+    }
+    .game-section .item h3 {
+        font-size: 17px;
+        margin: 10px 0px;
+    }
+    .game-section .item-desc p {
+        font-size: 14px;
+    }
+    .game-section .item.active {
+        width: 240px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
     }
 
     /* what_best */

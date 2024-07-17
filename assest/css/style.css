@@ -85,12 +85,15 @@ p {
   font-family: var(--poppins-text);
   margin-bottom: 0;
 }
-.title_padding_botoom{
+
+.title_padding_botoom {
   padding-bottom: 30px;
 }
-.lb-details{
+
+.lb-details {
   display: none !important;
 }
+
 /*=============
     button 
   =============*/
@@ -109,15 +112,18 @@ p {
 .main-btn {
   padding: 14px 50px;
 }
+
 .main-btn:hover {
   color: #01013F;
   background-color: #fff;
 }
+
 .white_btn {
   padding: 12px 30px;
   background-color: #199ADC;
 }
-.white_btn:hover{
+
+.white_btn:hover {
   background-color: transparent;
   border: 1px solid #199ADC;
   color: #199ADC;
@@ -503,148 +509,138 @@ header .navbar_menu .mobmenu_action i {
 /*=================
    software
 ===================*/
+.game-section {
+  /* padding: 60px 50px; */
+  overflow: hidden;
+}
+.owl-prev,.owl-next{
+  display: none;
+}
+.game-section h3 {
+  margin: 13px 0px;
+  font-size: 22px;
+  font-weight: 600;
+}
 
 .game-section .owl-stage {
   margin: 15px 0;
   display: flex;
-  width: 100% !important;
+  display: -webkit-flex;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: rgba(25, 154, 220, 0.3);
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: rgba(25, 154, 220, 1);
 }
 
 .game-section .item {
-  margin: 0px 10px;
-  width: 101px;
-  height: 345px;
+  margin: 0 15px 30px;
+  width: 100px;
+  height: 350px;
   display: flex;
-  display: -webkit-flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   border-radius: 16px;
   overflow: hidden;
   position: relative;
   transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
 
+.game-section .item.active .item_after {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.game-section .item .item_heding {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  z-index: 2;
+  color: #fff;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+
+}
+
 .game-section .item.active {
-  width: 376px !important;
-  background-image: unset !important;
-  background-color: #199ADC !important;
+  width: 375px;
+  box-shadow: 12px 10px 20px rgba(0, 0, 0, 0.25);
+  background-color: rgba(25, 154, 220, 1);
 }
 
-.game-section .item.active .game_img {
-  display: none;
+.game-section .item .item_after,
+.game-section .item .item_after .item_bgimg {
+  height: 100%;
 }
 
-.game-section .item .game_img::before {
+.game-section .item .item_after .item_heding h3 {
+  text-wrap: nowrap;
+  word-break: break-all;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.game-section .item:after {
   content: "";
+  display: block;
   position: absolute;
   height: 100%;
   width: 100%;
   left: 0;
   top: 0;
-  background-color: #000;
-  opacity: 0.7;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.game-section .item.active.item::after {
+  background-image: none;
+}
+
+.game-section .item-desc p {
+  margin-bottom: 0px;
 }
 
 .game-section .item-desc {
-  padding: 20px 40px;
+  padding: 0 24px;
   color: #fff;
   position: absolute;
+  /* top: 0px; */
+  left: 0px;
   z-index: 1;
   overflow: hidden;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: end;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
 }
 
 .game-section .item.active .item-desc {
-  padding: 40px;
-  transition: all 0.9s ease-out;
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
-.game-section .item-desc .white_btn {
-  font-family: var(--poppins-text);
-  font-size: 14px !important;
-  padding: 0;
-  border: unset !important;
-  display: inline;
-  border-radius: unset;
-  background-color: transparent;
+.game-section .item .item_logo {
+  width: 40px;
 }
 
-.game-section .item-desc p,
-.game-section .item-desc .white_btn {
-  display: none !important;
+.game-section .item .item_logo_roted {
+  transform: rotate(90deg);
 }
 
-.game-section .item.active .item-desc p,
-.game-section .item.active .item-desc .white_btn {
-  display: block !important;
+.game-section .owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
 }
-
-.game-section .game_title {
-  transform: rotate(-90deg);
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  max-width: 50px;
+.game-section .item .best-btn{
+  color: #01013F !important;
 }
-
-.game-section .item.active .game_title {
-  transform: rotate(0deg);
-  display: block;
-  height: auto;
-}
-
-.game-section .game_title h3 {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-  padding: 5px 0px;
-  margin: 0;
-  display: inline-flex;
-  white-space: pre;
-}
-
-.game-section .item.active .game_title h3 {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  padding: 5px 0px;
-  margin: 0;
-  display: block;
-}
-
-.game-section .owl-nav {
-  text-align: center;
-}
-
-.game-section .owl-nav button {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  color: #000;
-  background-color: #199ADC;
-  box-shadow: unset;
-  outline: unset;
-  border: unset;
-  margin: 0px 5px;
-}
-
-.game-section .owl-nav .owl-next,
-.game-section .owl-nav .owl-prev {
-  font-family: FontAwesome !important;
-  font-size: 15px !important;
-  color: #fff !important;
-}
-
-.game-section .owl-dots {
-  display: none;
-}
-
 /*=====================
    client-testimonial
   ====================*/
@@ -653,7 +649,7 @@ header .navbar_menu .mobmenu_action i {
 }
 
 .client-testimonial .slide-container {
-  padding-bottom: 40px ;
+  padding-bottom: 40px;
 }
 
 .client-testimonial .slide-content {
@@ -939,9 +935,11 @@ input::placeholder {
   transition: all 0.4s ease;
   cursor: pointer;
 }
-.footer .news_content .news_icon i:hover{
+
+.footer .news_content .news_icon i:hover {
   color: #199ADC;
 }
+
 /*** Back To Top ***/
 .scroll-top {
   position: fixed;
@@ -1141,9 +1139,11 @@ input::placeholder {
   padding-top: 10px;
   padding-bottom: 20px;
 }
-.product_padding{
-  padding:40px 0px 40px 0px;
+
+.product_padding {
+  padding: 40px 0px 40px 0px;
 }
+
 .product_about .ring {
   width: 440px;
   height: 440px;

@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/******* Fonts Import Start **********/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/********* Fonts Face CSS End **********/
+
+/******* Common Element CSS Start ******/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.clear {
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    border: 0px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+a:focus,
+a:active,
+a:visited,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #e73700;
+}
+
+h2 {
+    margin-bottom: 48px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+}
+
+
+
+.game-section {
+    padding: 60px 50px;
+}
+.game-section h3 {
+    margin: 13px 0px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.game-section .owl-stage {
+    margin: 15px 0;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: rgba(25, 154, 220, 0.3);
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: rgba(25, 154, 220, 1);
+}
+
+.game-section .item {
+    margin: 0 15px 30px;
+    width: 100px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.game-section .item.active .item_after {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.game-section .item .item_heding {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    z-index: 2;
+    color: #fff;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.game-section .item.active {
+    width: 375px;
+    box-shadow: 12px 10px 20px rgba(0, 0, 0, 0.25);
+    background-color: rgba(25, 154, 220, 1);
+}
+.game-section .item .item_after,
+.game-section .item .item_after .item_bgimg {
+    height: 100%;
+}
+
+.game-section .item .item_after .item_heding h3 {
+    text-wrap: nowrap;
+    word-break: break-all;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.game-section .item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.game-section .item.active.item::after {
+    background-image: none;
+}
+.game-section .item-desc p{
+    margin-bottom: 0px;
+}
+.game-section .item-desc {
+    padding: 0 24px;
+    color: #fff;
+    position: absolute;
+    /* top: 0px; */
+    left: 0px;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.game-section .item.active .item-desc {
+    opacity: 1;
+    visibility: visible;
+}
+
+.game-section .item .item_logo {
+    width: 40px;
+}
+
+.game-section .item .item_logo_roted {
+    transform: rotate(90deg);
+}
+
+.game-section .owl-theme.custom-carousel .owl-dots {
+    margin-top: -20px;
+    position: relative;
+    z-index: 5;
+}
+
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+
+@media (max-width: 991px) {
+    .game-section .item {
+        width: 85px;
+    }
+
+    .game-section .item.active {
+        width: 360px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .game-section .item h3{
+        font-size: 18px;
+    }
+    .game-section .item-desc p{
+        font-size: 15px;
+    }
+    .game-section .item {
+        margin: 0 10px 30px;
+        width: 85px;
+        height: 330px !important;
+        height: 100%;
+    }
+    .game-section .item .item_heding {
+        bottom: 42px;
+        font-size: 15px;
+    }
+    .game-section .item.active {
+        width: 280px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    }
+    .game-section .owl-theme.custom-carousel .owl-dots {
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width :575px){
+    .game-section .item {
+        margin: 0px 5px !important;
+        height: 100%;
+    }
+
+    .game-section .item.active {
+        width: 240px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    }
+}
