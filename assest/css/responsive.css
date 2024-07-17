@@ -153,7 +153,12 @@
     }
 
 }
-
+@media screen and (max-width :1180px) {
+    .game-section .owl-stage {
+        width: 100% !important;
+        justify-content: start;
+      }
+}
 @media screen and (max-width :991px) {
 
     h1 {

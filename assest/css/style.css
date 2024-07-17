@@ -510,8 +510,16 @@ header .navbar_menu .mobmenu_action i {
    software
 ===================*/
 .game-section {
-  /* padding: 60px 50px; */
   overflow: hidden;
+}
+.game-section .owl-stage {
+  margin: 15px 0;
+  display: flex;
+  display: -webkit-flex;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .owl-prev,.owl-next{
   display: none;
@@ -520,12 +528,6 @@ header .navbar_menu .mobmenu_action i {
   margin: 13px 0px;
   font-size: 22px;
   font-weight: 600;
-}
-
-.game-section .owl-stage {
-  margin: 15px 0;
-  display: flex;
-  display: -webkit-flex;
 }
 
 .owl-theme .owl-dots .owl-dot span {
