@@ -519,7 +519,7 @@ header .navbar_menu .mobmenu_action i {
   width: 100% !important;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center !important;
 }
 .owl-prev,.owl-next{
   display: none;

@@ -1,7 +1,7 @@
 @media screen and (max-width :1399px) {
     .game-section .owl-stage {
         width: 100% !important;
-        justify-content: start;
+        justify-content: start !important;
       }
 }
 @media screen and (max-width :1199px) {
