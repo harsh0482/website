@@ -594,6 +594,12 @@
     .product_padding {
         padding: 25px 0px 25px 0px;
     }
+    .game-section .item {
+        max-height: 300px !important;
+    }
+    .game-section .item .item_heding h3{
+        font-size: 14px !important;
+    }
 }
 
 

@@ -513,7 +513,7 @@ header .navbar_menu .mobmenu_action i {
   overflow: hidden;
 }
 .game-section .owl-stage {
-  margin: 15px 0;
+  margin-bottom: 15px ;
   display: flex;
   display: -webkit-flex;
   width: 100% !important;
